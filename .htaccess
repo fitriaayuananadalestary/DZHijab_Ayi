@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /ProjekUAS_Ayi/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
